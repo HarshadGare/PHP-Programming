@@ -1,0 +1,33 @@
+CREATE TABLE `countries` (
+  `id` int(11) NOT NULL,
+  `country` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `states` (
+  `id` int(11) NOT NULL,
+  `country_id` int(11) NOT NULL COMMENT 'id of the countries table',
+  `state` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+alter table `states`
+add foreign key (`country_id`)
+references `countries` (`id`)
+on delete CASCADE
+
+
+INSERT INTO `countries` (`id`, `country`) VALUES
+(1, 'India'),
+(2, 'America');
+
+
+
+INSERT INTO `states` (`id`, `country_id`, `state`) VALUES
+(2, 1, 'West Bengal'),
+(3, 1, 'Maharastra'),
+(4, 1, 'Goa'),
+(5, 1, 'Kerala'),
+(6, 2, 'Newyork'),
+(7, 2, 'Ohio'),
+(8, 2, 'Texas');

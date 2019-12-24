@@ -1,0 +1,18 @@
+<companies>
+
+		<company>
+				<name>Google</name>
+				<ceo>Sudar Pichai</ceo>
+		</company>
+
+		<company>
+				<name>Microsoft</name>
+				<ceo>Bill Gates</ceo>
+		</company>
+
+		<company>
+				<name>Apple</name>
+				<ceo>Tim Cook</ceo>
+		</company>
+
+</companies>
