@@ -1,2 +1,2 @@
-# PHP-Programs
-You Learn Web Programming for making dynamic and interactive Web pages.
+# PHP Programming
+You Learn PHP Programming for making dynamic and interactive Web pages.
